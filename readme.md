@@ -44,24 +44,26 @@ Linux環境は次の作業でインストールします。
     $ sudo apt-get dist-upgrade
     $ sudo apt-get autoclean
 
-## GPG keyの導入
+## PIP3の導入
 
-sudo apt-get update で次のような warning が表示される場合があります。
-
-    W: GPG error: https://packagecloud.io/headmelted/codebuilds/debian stretch InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 0CC3FD642696BFC8
-
-この場合、GPG key の導入で対処できます。
-
-    $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0CC3FD642696BFC8
-
+    $ sudo apt install python3-pip
+    
+## 数学関連パッケージの導入
+    
+    $ sudo apt install python3-numpy python3-scipy python3-matplotlib
+    
 ## 機械学習関連パッケージの導入
 
-    $ sudo apt install python3-pip python3-pandas python3-sklearn python3-numpy python3-scipy python3-matplotlib
+    $ sudo apt install python3-pandas python3-sklearn
     
-# Jupyter Notebookの導入
+## Jupyter Notebookの導入
 
     $ sudo pip3 install jupyter
 
-# Jupyter Notebookの起動
+## Jupyter Notebookの起動
 
     $ jupyter notebook
+
+## その他のパッケージ
+
+- 必要に応じて「sudo apt install python3-モジュール名」、または「sudo pip3 install モジュール名」で追加してください。
