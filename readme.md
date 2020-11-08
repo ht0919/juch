@@ -46,23 +46,27 @@ Linux環境は次の作業でインストールします。
 
 ## PIP3の導入
 
-    $ sudo apt install python3-pip
-    
+    $ sudo apt install -y python3-pip python3-dev
+
 ## 数学関連パッケージの導入
     
-    $ sudo apt install python3-numpy python3-scipy python3-matplotlib
+    $ sudo apt install -y python3-numpy python3-scipy python3-matplotlib
     
 ## 機械学習関連パッケージの導入
 
-    $ sudo apt install python3-pandas python3-sklearn
+    $ sudo apt install -y python3-pandas python3-sklearn
     
 ## Jupyter Notebookの導入
 
-    $ sudo pip3 install jupyter
+    $ sudo apt install -y jupyter-notebook
 
 ## Jupyter Notebookの起動
 
     $ jupyter notebook
+
+## 仮想環境関連パッケージの導入
+
+    $ sudo apt install -y python3-venv
 
 ## その他のパッケージ
 
